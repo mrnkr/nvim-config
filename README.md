@@ -14,7 +14,15 @@ brew install nvim
 
 2. Clone this repo to `~/.config/nvim`
 
-3. Open nvim and run `:PlugInstall`
+3. Install vim-plug if it's not already installed on your system
+
+```zsh
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
+
+4. Open nvim and run `:PlugInstall`
+
 
 ## Potential problems
 

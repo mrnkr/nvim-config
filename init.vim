@@ -15,6 +15,8 @@ Plug 'morhetz/gruvbox'
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 Plug 'maxmellon/vim-jsx-pretty'
 
+Plug 'tpope/vim-fugitive'
+
 " Initialize plugin system
 call plug#end()
 

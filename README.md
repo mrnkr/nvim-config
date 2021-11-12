@@ -4,6 +4,8 @@ My nvim config, from Uruguay to the world xD
 
 I wanted to keep it as minimal as possible. The goal is to work with react+node while being able to find my files using fzf, finding text within them using `Ag` and having keybindings be as similar to `vscode`'s as possible.
 
+You may love vscode's way of solving conflicts, I know I do. If that's the case, the tool I chose to deal with git conflicts which I found to be the simplest and closest to vscode's offering is [conflict-marker.vim](https://github.com/rhysd/conflict-marker.vim), it's just so simple.
+
 ## Installation steps
 
 1. Install nvim

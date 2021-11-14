@@ -16,6 +16,10 @@ Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 Plug 'maxmellon/vim-jsx-pretty'
 
 Plug 'rhysd/conflict-marker.vim'
+Plug 'zivyangll/git-blame.vim'
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Initialize plugin system
 call plug#end()
@@ -176,4 +180,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 " Include text after begin and end markers
 let g:conflict_marker_begin = '^<<<<<<< .*$'
 let g:conflict_marker_end   = '^>>>>>>> .*$'
+
+" git-blame
+nnoremap <c-u> :<C-u>call gitblame#echo()<CR>
 

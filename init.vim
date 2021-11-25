@@ -1,6 +1,8 @@
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
+Plug 'mhinz/vim-startify'
+
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'airblade/vim-gitgutter'
 
@@ -8,18 +10,20 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 Plug 'scrooloose/nerdcommenter'
-"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 Plug 'morhetz/gruvbox'
 
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 Plug 'maxmellon/vim-jsx-pretty'
 
+Plug 'tpope/vim-fugitive'
 Plug 'rhysd/conflict-marker.vim'
 Plug 'zivyangll/git-blame.vim'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
+Plug 'ryanoasis/vim-devicons'
 
 " Initialize plugin system
 call plug#end()
@@ -32,6 +36,8 @@ nmap ++ <plug>NERDCommenterToggle
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
+set encoding=UTF-8
+
 set number
 
 set smarttab
@@ -41,6 +47,8 @@ set shiftwidth=2
 " always uses spaces instead of tab characters
 set expandtab
 
+let g:airline_powerline_fonts = 1
+
 colorscheme gruvbox
 
 " coc config
@@ -48,8 +56,9 @@ let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-pairs',
   \ 'coc-tsserver',
-  \ 'coc-eslint', 
-  \ 'coc-json', 
+  \ 'coc-eslint',
+  \ 'coc-prettier',
+  \ 'coc-json',
   \ ]
 " from readme
 " if hidden is not set, TextEdit might fail.
@@ -96,7 +105,6 @@ nmap <silent> gr <Plug>(coc-references)
 
 nmap <silent> <c-p> :GFiles<CR>
 nmap <silent> <c-f> :Ag<CR>
-nmap <silent> <c-.> :CocFix<CR>
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -183,4 +191,3 @@ let g:conflict_marker_end   = '^>>>>>>> .*$'
 
 " git-blame
 nnoremap <c-u> :<C-u>call gitblame#echo()<CR>
-

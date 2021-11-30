@@ -17,6 +17,7 @@ Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 Plug 'maxmellon/vim-jsx-pretty'
 
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-unimpaired'
 Plug 'rhysd/conflict-marker.vim'
 Plug 'zivyangll/git-blame.vim'
 

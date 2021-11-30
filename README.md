@@ -83,3 +83,4 @@ Tap `Ctrl+P` to bring up `fzf` and start typing your filename
 ## Potential problems
 
 - You may have `coc.nvim` throw some errors because python is not properly configured. If the language is already installed the error might be you don't have the `neovim` package installed, which can easily be solved by running `pip install neovim`
+- Does the thing look ugly AF with tons of unsupported characters? You're just missing a font, a [`Nerd Font`](https://www.nerdfonts.com/) in particular! Install one (or all fonts using the script they provide) from their repo [right here](https://github.com/ryanoasis/nerd-fonts) and set one to your terminal profile, the one I like is `Ubuntu Nerd Font Mono`.

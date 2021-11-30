@@ -80,6 +80,20 @@ Tap `Ctrl+P` to bring up `fzf` and start typing your filename
   - `cB` to keep both versions in reverse order
   - `cn` to keep nothing
 
+### Going back to previous cursor position
+
+Press `Ctrl+O`.
+
+### Show symbol documentation in ts/js
+
+Press `Shift+K`.
+
+#### Some other coc.nvim shortcuts
+
+- `gd` => go to definition
+- `gi` => go to implementation
+- `gr` => find all references
+
 ## Potential problems
 
 - You may have `coc.nvim` throw some errors because python is not properly configured. If the language is already installed the error might be you don't have the `neovim` package installed, which can easily be solved by running `pip install neovim`

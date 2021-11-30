@@ -4,7 +4,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'mhinz/vim-startify'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'airblade/vim-gitgutter'
+Plug 'puremourning/vimspector'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -20,6 +20,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
 Plug 'rhysd/conflict-marker.vim'
 Plug 'zivyangll/git-blame.vim'
+Plug 'airblade/vim-gitgutter'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -47,6 +48,8 @@ set tabstop=2
 set shiftwidth=2
 " always uses spaces instead of tab characters
 set expandtab
+
+let g:vimspector_enable_mappings = 'HUMAN'
 
 let g:airline_powerline_fonts = 1
 

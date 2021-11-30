@@ -97,6 +97,16 @@ Press `Shift+K`.
 - `gg` to go to the beginning of the current file.
 - `G` to go to the end of the current file.
 
+### Debugging with vimspector
+
+- First remember to configure your project to use vimspector. For this create a `.vimspector.json` file and check out the [reference docs](https://puremourning.github.io/vimspector/configuration.html#adapter-configurations) to see how to write it.
+- Use the following hotkeys to debug
+  - `F5` to start debugging
+  - `F9` to toggle a breakpoint in the current line
+  - `F10` to step over
+  - `F11` to step into
+  - `F12` to step out
+
 ## Potential problems
 
 - You may have `coc.nvim` throw some errors because python is not properly configured. If the language is already installed the error might be you don't have the `neovim` package installed, which can easily be solved by running `pip install neovim`

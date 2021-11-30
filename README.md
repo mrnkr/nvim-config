@@ -59,6 +59,10 @@ Tap `Ctrl+P` to bring up `fzf` and start typing your filename
 2. Select all the text you want to copy.
 3. Use key combo `"+y` to copy to the OS clipboard OR just `y` to copy within VIM.
 
+### Vertical split to compare uncommitted changes to a file with HEAD
+
+`:Gdiffsplit` does this for you.
+
 ### Looking at previous revisions of a file with vim-fugitive and vim-unimpaired
 
 1. `:Gclog -10 %` will load the last ten commits that affected the currently open file into the quickfix list.

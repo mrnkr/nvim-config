@@ -53,17 +53,11 @@ Tap `Ctrl+P` to bring up `fzf` and start typing your filename
 1. Tap `Ctrl+W` and then `V` (for vertical split) or `S` (for horizontal split).
 2. Tap `Ctrl+W` and then either `L` or `H` to navigate between vertical splits OR `J` or `K` to navigate between horizontal splits.
 
-### Copy text to the OS clipboard
+### Copying text
 
 1. Go into `VISUAL` mode.
 2. Select all the text you want to copy.
-3. Type use key combo `"+y`
-
-### Copy text within VIM
-
-1. Go into `VISUAL` mode.
-2. Select all the text you want to copy.
-3. Just press `y`
+3. Use key combo `"+y` to copy to the OS clipboard OR just `y` to copy within VIM.
 
 ### Looking at previous revisions of a file with vim-fugitive and vim-unimpaired
 
@@ -93,6 +87,11 @@ Press `Shift+K`.
 - `gd` => go to definition
 - `gi` => go to implementation
 - `gr` => find all references
+
+### Going to the beginning/end of a file
+
+- `gg` to go to the beginning of the current file.
+- `G` to go to the end of the current file.
 
 ## Potential problems
 

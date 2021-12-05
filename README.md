@@ -40,6 +40,10 @@ brew install the_silver_searcher
 3. Press `Enter` to perform the search.
 4. Press `n` to find the next occurrence or `N` to find the previous occurrence.
 
+### Nevigate through the entire project using a tree view (NERDTree)
+
+Tap `Ctrl+B` and you'll toggle NERDTree like you toggle the file explorer in VSCode.
+
 ### Searching in all files
 
 Tap `Ctrl+F` to use `Ag` to look for any given text in all your files known by git

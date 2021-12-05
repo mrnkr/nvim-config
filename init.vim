@@ -43,6 +43,9 @@ nmap ++ <plug>NERDCommenterToggle
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
+nmap <silent> ]c :call CocAction('diagnosticNext')<cr>
+nmap <silent> [c :call CocAction('diagnosticPrevious')<cr>
+
 set encoding=UTF-8
 
 set number

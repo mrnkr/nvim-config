@@ -95,6 +95,9 @@ Press `Shift+K`.
 - `gd` => go to definition
 - `gi` => go to implementation
 - `gr` => find all references
+- `]c` => go to next issue (error or warning)
+- `[c` => go to previous issue (error or warning)
+- `:CocDiagnostics` => show a list of all errors || warnings and take me there when I choose one
 
 ### Going to the beginning/end of a file
 

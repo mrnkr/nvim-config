@@ -6,6 +6,9 @@ Plug 'mhinz/vim-startify'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'puremourning/vimspector'
 
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
@@ -24,6 +27,7 @@ Plug 'airblade/vim-gitgutter'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'jeetsukumaran/vim-buffergator'
 
 Plug 'ryanoasis/vim-devicons'
 
@@ -31,6 +35,7 @@ Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 inoremap jk <ESC>
+nmap <C-b> :NERDTreeToggle<CR>
 vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
 
@@ -54,6 +59,8 @@ let g:vimspector_enable_mappings = 'HUMAN'
 let g:airline_powerline_fonts = 1
 
 colorscheme gruvbox
+
+let g:NERDTreeIgnore = ['^node_modules$']
 
 " coc config
 let g:coc_global_extensions = [

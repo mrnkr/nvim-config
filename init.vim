@@ -14,8 +14,6 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'scrooloose/nerdcommenter'
 
-Plug 'morhetz/gruvbox'
-
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 Plug 'maxmellon/vim-jsx-pretty'
 
@@ -28,6 +26,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'jeetsukumaran/vim-buffergator'
+Plug 'rebelot/kanagawa.nvim'
 
 Plug 'ryanoasis/vim-devicons'
 
@@ -61,7 +60,7 @@ let g:vimspector_enable_mappings = 'HUMAN'
 
 let g:airline_powerline_fonts = 1
 
-colorscheme gruvbox
+colorscheme kanagawa
 
 let g:NERDTreeIgnore = ['^node_modules$']
 
